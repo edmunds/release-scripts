@@ -60,25 +60,25 @@ rm $DEST/etm-core/etm-url-token-tool/src/test/resources/testng.xml
 
 function build_all {
 
-cd $DEST/automated-test
-mvn clean install
-
-cd $DEST/edmunds-configuration
-mvn clean install
-
-cd $DEST/zookeeper-common
-mvn clean install
-
-cd $DEST/etm-api
-mvn clean install
-
-cd $DEST/etm-client
-mvn clean install
-
-cd $DEST/etm-core
-mvn clean install
-
-cd $DEST/etm-agent
+cd $DEST/automated-test && \
+mvn clean install && \
+\
+cd $DEST/edmunds-configuration && \
+mvn clean install && \
+\
+cd $DEST/zookeeper-common && \
+mvn clean install && \
+\
+cd $DEST/etm-api && \
+mvn clean install && \
+\
+cd $DEST/etm-client && \
+mvn clean install && \
+\
+cd $DEST/etm-core && \
+mvn clean install && \
+\
+cd $DEST/etm-agent && \
 mvn clean install
 }
 
