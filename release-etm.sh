@@ -72,13 +72,13 @@ mvn clean install
 cd $DEST/etm-api
 mvn clean install
 
-cd $DEST/etm-agent
-mvn clean install
-
 cd $DEST/etm-client
 mvn clean install
 
 cd $DEST/etm-core
+mvn clean install
+
+cd $DEST/etm-agent
 mvn clean install
 }
 
